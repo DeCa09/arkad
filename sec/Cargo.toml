@@ -9,7 +9,7 @@ categories = ["algorithms", "rust-patterns"]
 keywords = ["state-machine", "design-pattern"]
 
 [dependencies]
-reqwest = { version = "0.12.7", features = ["blocking"] }
+thiserror = "2"
 state_maschine = { path = "../state_machine" }
 
 [dev-dependencies]
@@ -20,8 +20,8 @@ name = "sec"
 path = "src/lib/lib.rs"
 
 [[bin]]
-name = "ingestion"
-path = "src/bin/ingestion/main.rs"
+name = "extraction"
+path = "src/bin/extraction/main.rs"
 
 [lints.rust]
 unsafe_code = "forbid"
