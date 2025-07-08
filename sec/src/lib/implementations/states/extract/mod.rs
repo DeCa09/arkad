@@ -10,6 +10,7 @@
 //!
 //! See the documentation for each submodule for details on their specific responsibilities and usage.
 
+pub mod prepare_sec_request;
 pub mod validate_cik_format;
 
 use crate::error::State as StateError;
